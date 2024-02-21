@@ -31,7 +31,7 @@ body{
     transition: .2s;
 }
 
-button:hover{
+button:hover, form .btn-enviar input:hover{
     box-shadow: 0px 0px 8px #00FF08;
     transform: scale(1.05);
 }
@@ -269,4 +269,51 @@ section.portfolio .flex{
 .overlay:hover{
 
     opacity: 1;
+}
+
+/*SECTION FORMULÁRIO*/
+
+section.formulario{
+    padding: 80px 4%;
+}
+
+form{
+    max-width: 500px;
+    margin: 0 auto;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+form input, form textarea{
+    width: 100%;
+    background-color: #242424;
+    border: none;
+    outline: none;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: white;
+    font-size: 18px;
+
+}
+
+form textarea{
+    resize: none;
+    max-height: 400px;
+}
+
+form .btn-enviar{
+    margin-top: 20px;
+    text-align: center;
+}
+
+form .btn-enviar input[type=submit]{
+    width: 120px;
+    background-color: #00FF08;
+    color: black;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .2s;
 }
