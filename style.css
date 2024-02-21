@@ -1,0 +1,272 @@
+/* ESTILO GERAL */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background-color: black;
+    height: 100vh;
+}
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+}
+
+.btn-contato button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #00FF08;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+button:hover{
+    box-shadow: 0px 0px 8px #00FF08;
+    transform: scale(1.05);
+}
+
+h2.titulo{
+    color: white;
+    font-size: 34px;
+    text-align: center;
+}
+/*ESTILO DO CABEÇALHO*/
+
+header{
+    padding: 40px 4%;
+}
+
+span{
+    color: #00FF08;
+}
+#logo-ksn{
+    color: white;
+    display: inline-block;
+    font-weight: 700;
+    font-size: 30px; /* NÃO ESTOU CONSEGUINDO APLICAR O FONT-SIZE NO LOGO*/
+}
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a{
+    color: #5c5c5c;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+
+}
+
+header a:hover{
+    color: white;
+    transform: scale(1.05) ;
+
+}
+
+#logo-ksn:hover{
+    transform: none;
+
+}
+    
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
+
+
+/*ESTILO SECTION TOPO DO SITE*/
+
+section.topo-do-site{
+    padding: 40px 4%;
+}
+
+section.topo-do-site .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.topo-do-site h1{
+    color: white;
+    font-size: 45px;
+    line-height: 40px;
+}
+
+.topo-do-site .texto-topo p{
+    color: white;
+    margin: 40px 0%;
+
+}
+
+.topo-do-site .imagem-topo img{
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar {
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 30px;
+    }
+}
+
+section.especialidades{
+    padding: 40px 4%;
+}
+
+section.especialidades .flex{
+    gap: 60px;
+}
+
+.especialidades .especialidades-box{
+    color: white;
+    padding: 40px;
+    margin-top: 45px;
+    border-radius: 20px;
+   text-align: center;
+    transition: .2s;
+
+}
+
+.especialidades .especialidades-box:hover{
+    box-shadow: 0 0 20px #ffffff78;
+  
+}
+   
+
+section.especialidades .especialidades-box i{
+    color: #00FF08;
+    font-size: 50px;
+    
+}
+
+section.especialidades .especialidades-box h3{
+    font-size: 28px;
+    margin: 25px 0;
+   
+    
+}
+
+/*ESTILO SECTION SOBRE*/
+
+section.sobre{
+    padding: 80px 4%;
+   
+}
+section.sobre .flex{
+    display: flex;
+    gap: 60px;
+    align-items: center;
+}
+
+.sobre .texto-sobre{
+    color: white;
+}
+
+.sobre .texto-sobre h2{
+    font-size: 40px ;
+    line-height: 40px;
+    margin-bottom: 40px;
+}
+
+.sobre .texto-sobre h2 span{
+    display: block;
+}
+
+.sobre .texto-sobre p{
+    margin: 20px 0;
+    text-align: justify;
+}
+
+.sobre .texto-sobre .btn-medias button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #00FF08;
+    cursor: pointer;
+    border: none;
+    font-size: 25px;
+    margin: 0 2px;
+    transition: .2s;
+
+
+}
+
+.sobre .imagem-sobre img{
+    border-radius: 2px;
+}
+
+/*SECTION PORTFOLIO*/
+
+section.portfolio{
+
+    padding: 80px 4%;
+    box-shadow: 0 0 40px 10px #ffffff1d; /*0 deslocamento horizontal, 0 deslocamento vertical, 40px desfoque e 10 px espalhamento*/
+
+}
+
+section.portfolio .flex{
+   justify-content: space-around; 
+    margin-top: 60px;
+}
+
+.image-portfolio{
+    background-color: #00FF08;
+    width: 360px;
+    height: 460px;
+    background-size: cover;
+    background-position: 100% 0;
+    transition: 8s;
+    cursor: pointer;
+    border-radius: 40px;
+    position: relative;
+
+}
+
+.image-portfolio:hover{
+    background-position: 100% 100% ;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000b8;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: white;
+    opacity: 0;
+    transition: .5s;
+
+}
+
+.overlay:hover{
+
+    opacity: 1;
+}
