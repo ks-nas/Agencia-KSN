@@ -18,6 +18,8 @@
     <!--FIM DA INSTALAÇÃO DO BOOTSTRAP-->
     <link rel="stylesheet" href="style.css">
 
+    <script src="menu.js" defer></script>
+
 </head>
 
 <body>
@@ -40,10 +42,31 @@
             </nav>
 
             <div class="btn-contato">
-            <a href="#">
-                <button>Contato</button>
-            </a>
-            </div>
+                <a href="#"><button>Contato</button>
+                </a>
+            </div> <!--fechamento BTN-CONTATO-->
+
+            <div class="btn-abrir-menu" id="btn-menu-mobile">
+                <i class="bi bi-list"></i>
+            </div> <!--fechamento BTN-ABRIR-MENU-->
+
+            <div class="menu-mobile" id="menu-mobile">
+                <div class="btn-fechar" id=>
+                    <i class="bi bi-x-lg"></i>
+                </div>
+
+                <nav>
+                    <ul>
+                       <li><a href="#">Início</a></li>
+                       <li><a href="#">Especialidades</a></li>
+                       <li><a href="#">Sobre</a></li>
+                       <li><a href="#">Projetos</a></li>
+                       <li><a href="#">Contato</a></li>
+                    </ul>
+                </nav>
+
+            </div> <!--fechamento MENU-MOBILE-->
+            <div class="overlay-menu" id="overlay-menu"></div>
         </div> <!-- fechamento INTERFACE-->
 
     </header> <!--fechamento HEADER-->
