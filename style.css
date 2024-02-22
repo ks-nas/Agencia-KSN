@@ -96,11 +96,15 @@ header nav.menu-desktop ul li {
 }
 
 /*ESTILO DO MENU MOBILE*/
+.btn-abrir-menu{
+    display: none;
+}
 
 .btn-abrir-menu i{
     color: #00FF08;
     font-size: 40px;
 }
+
 
 .menu-mobile{
    background-color: black; 
@@ -443,6 +447,10 @@ footer .line-footer p a {
     .menu-desktop,
     .btn-contato {
         display: none;
+    }
+
+    .btn-abrir-menu{
+        display: block;
     }
 
     /*TOPO DO SITE*/
